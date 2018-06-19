@@ -23,6 +23,7 @@ class HttpRequest(BinaryIO):
     POST = ...  # type: QueryDict
     COOKIES = ...  # type: Dict[str, str]
     META = ...  # type: Dict[str, str]
+    user = ... # type Any
     FILES = ...  # type: MultiValueDict[str, uploadedfile.UploadedFile]
     path = ...  # type: str
     path_info = ...  # type: str
